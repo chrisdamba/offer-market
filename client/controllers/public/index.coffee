@@ -11,17 +11,16 @@ myApp = new Framework7(
 # Export selectors engine
 $$ = Dom7
 
+mainSwiper = myApp.swiper('.swiper-container',
+    speed: 400
+    spaceBetween: 100    
+)
+
 # Add main View
 mainView = myApp.addView('.view-main', 
 	# Enable dynamic Navbar
-	dynamicNavbar: false
+	dynamicNavbar: false	
 )
-
-mySwiper = new Swiper('.swiper-container',
-    speed: 400
-    spaceBetween: 100
-)
-
 ###
 	Controller: Index
 	Template: /client/views/public/index.html
