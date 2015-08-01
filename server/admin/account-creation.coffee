@@ -60,7 +60,7 @@ Meteor.methods(
     # Send off our email to the user.
     Email.send(
       to: userData.email
-      from: "The Meteor Chef - Demo <demo@themeteorchef.com>"
+      from: "Christopher Damba - Demo <chris@damba.com>"
       subject: "Welcome aboard, team matey!"
       html: emailTemplate
     )

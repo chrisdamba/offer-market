@@ -11,11 +11,6 @@ myApp = new Framework7(
 # Export selectors engine
 $$ = Dom7
 
-mainSwiper = myApp.swiper('.swiper-container',
-    speed: 400
-    spaceBetween: 100    
-)
-
 # Add main View
 mainView = myApp.addView('.view-main', 
 	# Enable dynamic Navbar
@@ -53,4 +48,11 @@ Template.index.events(
 		Meteor.loginWithTwitter((error)->
 			console.log error.reason if error
 		)
+)
+
+Template.index.onRendered(->
+	mainSwiper = new Swiper('.swiper-container',
+	    speed: 400
+	    spaceBetween: 100    
+	)
 )
