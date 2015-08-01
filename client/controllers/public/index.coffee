@@ -55,4 +55,6 @@ Template.index.onRendered(->
 	    speed: 400
 	    spaceBetween: 100    
 	)
+
+	mainSwiper.reInit()
 )
