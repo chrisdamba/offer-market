@@ -2,7 +2,7 @@
 	<div class="statusbar-overlay"></div>
     <div class="panel-overlay"></div>
     
-    {{>leftPanel}}
+    {{>panel}}
 
 	<div class="views">
 		<div class="view view-main">
@@ -13,40 +13,17 @@
 	        </div>
 
 	        <div class="pages navbar-through toolbar-through">
-			{{>index}}	          
-	        </div>
-	      
-	        <div class="toolbar">
-	              <div class="toolbar-inner">
-	              <ul class="toolbar_icons icons_4row">
-	              <li><a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/white/user.png" alt="" title="" /></a></li>
-	              <li><a href="#" data-panel="left" class="open-panel"><img src="images/icons/white/lock.png" alt="" title="" /></a></li>
-	              <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/heart.png" alt="" title="" /></a></li>
-	              <li><a href="#"><img src="images/icons/white/envelope.png" alt="" title="" /></a></li>
-	              </ul>
-	              </div>  
-	        </div>
+				{{>index}}	          
+	        </div>     
 	        
+	        	{{>toolbar}}        
 
 	      </div>
 	    </div>
 	    
-	    <!-- About Popup -->
-	    <div class="popup popup-login">
-	      <div class="content-block">
-	        <h4>Login</h4>
-	              <div class="loginform">
-	              <form id="LoginForm" method="post">
-	              <label>Username:</label>
-	              <input type="text" name="Username" value="" class="form_input required" />
-	              <label>Password:</label>
-	              <input type="password" name="Password" value="" class="form_input required" />
-	              <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
-	              </form>
-	              </div>
-	        <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
-	      </div>
-	    </div>
+	    <!-- Login Popup -->
+	    {{>signInPopup}}
+	    
 	    <!-- Services Popup -->
 	    <div class="popup popup-social">
 	    <div class="content-block">
