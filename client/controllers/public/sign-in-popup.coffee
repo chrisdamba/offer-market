@@ -40,23 +40,24 @@ Template.signInPopup.rendered = ->
           else
             if response.error
               # If we get an error from our method, alert to the user.
-              alert response.error
+              myApp.alert response.error, "Email Error"
             else
               # If all is well, create the user's account!
               Accounts.createUser(user, (error)->
                 if error
-                  alert error.reason
+                  myApp.alert error.reason, "Error creating user"
                 else
-                  # If all works as expected, we need to hide our modal backdrop (lol, Bootstrap).
-                  $('.modal-backdrop').hide()
+                  # If all works as expected, we need to close our popup.                  
+                  myApp.closeModal ".popup-login"
               )
       else
         Meteor.loginWithPassword(user.email, user.password, (error)->
           if error
             alert error.reason
           else
-            # If all works as expected, we need to hide our modal backdrop (lol, Bootstrap).
-            $('.modal-backdrop').hide()
+            # If all works as expected, we need to close our popup.
+            # console.log JSON.stringify(myApp) 
+            myApp.closeModal(".popup-login")            
         )
   )
 
@@ -71,6 +72,7 @@ Template.signInPopup.events(
   'click .btn-sign-in': ->
     # When the user clicks "Sign In," set a session variable
     # to use later in our submitHandler (above).
+    #console.log myApp 
     Session.set 'createOrSignIn', 'signin'
 
   'submit form': (e)->

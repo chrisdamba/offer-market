@@ -1,8 +1,14 @@
-myApp = new Framework7(
+###
+	Controller: Index
+	Template: /client/views/public/index.html
+###
+
+window.myApp = new Framework7(
 	animateNavBackIcon: true
 	# Enable templates auto precompilation
 	precompileTemplates: true
 	# Enabled pages rendering using Template7
+	swipePanel: true
 	swipeBackPage: true
 	pushState: true
 	template7Pages: true
@@ -14,12 +20,13 @@ $$ = Dom7
 # Add main View
 mainView = myApp.addView('.view-main', 
 	# Enable dynamic Navbar
-	dynamicNavbar: false	
+	dynamicNavbar: true	
 )
-###
-	Controller: Index
-	Template: /client/views/public/index.html
-###
+
+# Init slider and store its instance in mySwiper variable
+mySwiper = myApp.swiper('.swiper-container', 
+	pagination: '.swiper-pagination'	
+)
 
 # Events
 Template.index.events(

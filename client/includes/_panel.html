@@ -1,20 +1,23 @@
 <template name="panel">
 	<div class="panel panel-left panel-cover">
 		<div class="user_login_info">
-			<div class="user_thumb">
-				<img src="images/photos/photo8.jpg" alt="" title="" />
-			</div>
-			<h2>Hi, username</h2>
-			<p>Edit your account settings</p>
-			<nav class="list-nav-small">
-				<ul>
-					<li class="about-icon-small"><a href="about.html" class="close-panel">Profile</a></li>
-					<li class="tools-icon-small"><a href="features.html" class="close-panel">Settings</a></li>
-					<li class="lock-icon-small"><a href="features.html" class="close-panel">Account</a></li>
-					<li class="envelope-icon-small"><a href="features.html" class="close-panel">Messages</a></li>
-					<li class="logout-icon-small js-logout"><a href="#" class="close-panel">Logout</a></li>
-				</ul>
-			</nav>
+			{{#if currentUser}}
+				<div class="user_thumb">
+					<img src="images/photos/photo8.jpg" alt="" title="" />
+				</div>
+			
+				<h2>Hi, {{#if userIdentity currentUser._id}} {{userIdentity currentUser._id}} {{/if}}</h2>
+				<p>Edit your account settings</p>
+				<nav class="list-nav-small">
+					<ul>
+						<li class="about-icon-small"><a href="#" class="close-panel">Profile</a></li>
+						<li class="tools-icon-small"><a href="#" class="close-panel">Settings</a></li>
+						<li class="lock-icon-small"><a href="#" class="close-panel">Account</a></li>
+						<li class="envelope-icon-small"><a href="#" class="close-panel">Messages</a></li>
+						<li class="logout-icon-small js-logout"><a href="#" class="close-panel">Logout</a></li>
+					</ul>
+				</nav>
+			{{/if}}
 		</div>
 	</div>
 </template>
