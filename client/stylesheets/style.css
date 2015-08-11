@@ -579,6 +579,7 @@ width:100%;
 .navbar{
 height: 100px;
 line-height:100px;
+background-color:#238acf;
 }
 .toolbar {
 height: 100px;
@@ -1367,8 +1368,8 @@ padding:0px 15px;
 height:98%;
 }
 .navbar{
-height: 80px;
-line-height:80px;
+height: 60px;
+line-height:60px;
 }
 .toolbar {
 height: 50px;

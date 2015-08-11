@@ -6,23 +6,11 @@
 
 	<div class="views">
 		<div class="view view-main">
-	        <div class="navbar">
-				<div class="navbar-inner">
-	            	<div class="center sliding">
-	            		<div class="logo_title">Offer Market</div>
-	            	</div>
-	            	<div class="right menu_open_icon">
-	            		<a href="#" data-panel="left" class="link icon-only open-panel"></a>
-	            	</div>
-	          	</div>
-	        </div>
+	        {{>navbar}}
 
-	        <div class="pages navbar-through toolbar-through">
-				{{>yield}}	          
-	        </div>     
-	        
+	       	{{>yield}}	          
+	        	        
 			{{>toolbar}}        
-
 		</div>
 	</div>	    
     <!-- Login Popup -->
