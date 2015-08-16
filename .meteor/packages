@@ -11,6 +11,8 @@ coffeescript
 underscore
 accounts-password
 accounts-base
+
+
 jquery
 check
 audit-argument-checks
@@ -27,4 +29,14 @@ email
 horka:swipebox
 interwebs:framework7
 swiper:swiper
+
+# - - Internal Packages
+offermarket:core
+
+# - - Testing packages
 xolvio:cucumber
+xolvio:stripe-stub
+xolvio:email-stub
+offermarket:fixtures
+sanjo:jasmine
+velocity:helpers
