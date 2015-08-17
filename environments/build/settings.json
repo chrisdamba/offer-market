@@ -1,0 +1,15 @@
+{
+  "public": {
+    "price": "1000",
+    "currency": "usd"
+  },
+  "private": {   
+    "emails": {
+      "welcome": {
+        "siteName": "Offer Market",
+        "from": "Chris Damba <chridam@gmail.com>",
+        "subject": "Welcome to Offer Market!",
+        "text": "You are now registered. To access your shop, simply click the link below:"
+      }
+  }
+}
