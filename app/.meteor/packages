@@ -1,0 +1,42 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+standard-app-packages
+coffeescript
+underscore
+accounts-password
+accounts-base
+
+
+jquery
+check
+audit-argument-checks
+iron:router
+themeteorchef:jquery-validation
+accounts-facebook
+accounts-github
+accounts-google
+accounts-twitter
+meteorhacks:ssr
+service-configuration
+http
+email
+horka:swipebox
+interwebs:framework7
+swiper:swiper
+
+# - - Internal Packages
+offermarket:core
+
+# - - Testing packages
+xolvio:cucumber
+xolvio:stripe-stub
+xolvio:email-stub
+offermarket:fixtures
+sanjo:jasmine
+velocity:helpers
