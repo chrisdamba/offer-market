@@ -1,0 +1,61 @@
+machine:  
+  environment:
+    PATH: ${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin
+    NODE_ENV: test
+    TZ: Europe/Prague
+  node:
+    version: v0.10.33
+
+general:  
+  artifacts:
+    - code/client/build/karma-coverage
+
+dependencies:  
+  cache_directories:
+    - "~/.meteor"
+    - "~/.npm"
+    - "~/_opt"
+  override:
+    - npm prune && npm install
+    - npm prune && npm install:
+        pwd: code/server
+    - npm prune && npm install:
+        pwd: code/client
+    - bower prune && bower install:
+        pwd: code/client
+
+test:  
+  override:
+    - grunt test:
+        pwd: code/server
+    - grunt test && grunt compile:
+        pwd: code/client
+  post:
+    - sed -i -e 's/\/node_modules//' code/server/.gitignore
+    - sed -i -e 's/\/bin//' code/client/.gitignore
+    - git config user.name "circleci"
+    - git config user.email "xxxxx@salsitasoft.com"
+    - git add -A
+    - git commit -m "build"
+
+deployment:  
+  try:
+    branch: /try.*/
+    commands:
+      - git push -f git@heroku.com:${CIRCLE_PROJECT_REPONAME}-try.git ${CIRCLE_BRANCH}:master
+  dev:
+    branch: develop
+    commands:
+      - git push -f git@heroku.com:${CIRCLE_PROJECT_REPONAME}-dev.git ${CIRCLE_BRANCH}:master
+  qa:
+    branch: /release.*/
+    commands:
+      - git push -f git@heroku.com:${CIRCLE_PROJECT_REPONAME}-qa.git ${CIRCLE_BRANCH}:master
+  stage:
+    branch: client
+    commands:
+      - git push -f git@heroku.com:${CIRCLE_PROJECT_REPONAME}-stage.git ${CIRCLE_BRANCH}:master
+  prod:
+    branch: master
+    commands:
+      - git push -f git@heroku.com:${CIRCLE_PROJECT_REPONAME}-prod.git ${CIRCLE_BRANCH}:master
