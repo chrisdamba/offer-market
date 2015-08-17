@@ -5,8 +5,9 @@ machine:
 
   environment:
     # Enable this to debug builds
-    #VELOCITY_DEBUG: true
-    STRIPE_SECRET_KEY: $TEST_STRIPE_SECRET_KEY
+    VELOCITY_DEBUG: true
+    PATH: ${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin
+    NODE_ENV: test
 
 dependencies:
 
