@@ -7,6 +7,7 @@ Feature: Make an offer
   Background: Seller created an item
     Given a seller has created an item
 
+  @ignore
   Scenario: authenticated user can make a private offer
     Given I have already created an account
     And I login with my username and password
