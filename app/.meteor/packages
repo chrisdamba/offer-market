@@ -39,4 +39,7 @@ xolvio:stripe-stub
 xolvio:email-stub
 offermarket:fixtures
 sanjo:jasmine
+# mike:mocha
+practicalmeteor:sinon
 velocity:helpers
+velocity:html-reporter

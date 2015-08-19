@@ -6,14 +6,20 @@
 /* globals OfferMarket: true */
 
 OfferMarket = {
+  
   Constants: {},
+  
   // Small reusable utilities
   Utils: {},
+  
   // Meteor Mongo Collections
   Collections: {},
+  
   // Domain specific logic.
   Services: {},
+  
   Subscriptions: {},
+  
   API: {}
 };
 
