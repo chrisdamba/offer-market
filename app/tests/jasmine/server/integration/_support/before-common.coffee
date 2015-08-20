@@ -1,2 +1,0 @@
-beforeAll ->
-	VelocityHelpers.exportGlobals()

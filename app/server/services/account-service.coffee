@@ -3,7 +3,8 @@ OfferMarket.Services.Account =
 	createAccount: (email, profile) ->
 		newUserId = Accounts.createUser(
 			email: email
-			profile: profile)
+			profile: profile
+		)
 		
 		Accounts.sendEnrollmentEmail newUserId
 	

@@ -1,5 +1,8 @@
 module.exports = ->
 
+	@Given /^a seller has created an item$/, ->
+		@AuthenticationHelper.createAccount()
+
 	@Given /^I have already created an account$/, ->
 		@AuthenticationHelper.createAccount()
 	
