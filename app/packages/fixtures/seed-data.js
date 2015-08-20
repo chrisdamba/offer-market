@@ -16,9 +16,9 @@ OfferMarket.Utils.seedData = function () {
   });
 
   OfferMarket.Collections.Pages.insert({
-    title: 'Buy',
+    title: 'Offer',
     template: 'info',
-    path: '/buy',
+    path: '/offer',
     description: '' +
     '##Coming soon' +
     '\n\n' +

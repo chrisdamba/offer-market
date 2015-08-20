@@ -2,11 +2,11 @@ module.exports = ->
 	@Before ->
 		@AuthenticationHelper =
 			login: ->
-				client.waitForExist 'a#login-sign-in-link'
-				client.click 'a#login-sign-in-link'
+				client.waitForExist 'a.open-popup'
+				client.click 'a.open-popup'
 				client.setValue '#login-email', 'me@example.com'
 				client.setValue '#login-password', 'letme1n'
-				client.click '.login-button-form-submit'
+				client.click '.btn-sign-in'
 				client.waitForExist '#login-name-link'
 				
 			logout: ->

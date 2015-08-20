@@ -1,21 +1,34 @@
 Feature: Create account
 
-  As a paying user
-  I want to authenticate
-  So that I can access the content I paid for
+	As a user
+	I want to authenticate
+	So that I can make an offer on an item
 
-  Background: a site has been configured
-    Given An seller has created content
+	Background: a site has been configured
+		Given A seller has created a product
 
-  @ignore
-  Scenario: Receive link after payment
-    Given I just paid for content and received an enrollment email
-    When I open the account creation link in my email
-    Then I am able to create my account
-    And I am able to access my content
+	Scenario: unregisterd users cannot make an offer
+		Given I am not logged in
+		When I navigate to the make offer page
+		Then I cannot see offer options
 
-  @ignore
-  Scenario: Login after enrollment
-    Given I have already created an account
-    When I login with my username and password
-    Then I am able to access my content
+	@ignore
+	Scenario: unregisterd users can create an account
+		Given I am not logged in
+		When I navigate to the log in screen
+		Then I register to create an account
+
+	@ignore
+	Scenario: registered users can login to see private content
+		Given I have signed up
+		And I am not logged in
+		When I navigate to the private content page
+		And I login
+		Then I can see my premium content
+
+	@ignore
+	Scenario: registered users can repurchase a subscription
+		Given I am not logged in
+		When I navigate to the private content page
+		And I see a "Buy Now" button
+		And I cannot not see premium content
