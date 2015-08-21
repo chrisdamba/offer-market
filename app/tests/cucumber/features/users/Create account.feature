@@ -4,7 +4,6 @@ Feature: Create account
 	I want to authenticate
 	So that I can make an offer on an item
 	
-	@dev
 	Background: a site has been configured
 		Given A seller has created a product
 
