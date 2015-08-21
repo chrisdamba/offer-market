@@ -4,9 +4,11 @@ Feature: Create account
 	I want to authenticate
 	So that I can make an offer on an item
 
+	@ignore
 	Background: a site has been configured
 		Given A seller has created a product
 
+	@ignore
 	Scenario: unregisterd users cannot make an offer
 		Given I am not logged in
 		When I navigate to the make offer page
