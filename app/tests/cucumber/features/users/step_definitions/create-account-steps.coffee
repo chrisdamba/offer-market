@@ -1,7 +1,7 @@
 module.exports = ->
 
 	@Given /^A seller has created a product$/, ->
-		@AuthenticationHelper.createAccount()
+		server.call 'fixtures/seedData
 
 	@Given /^I am not logged in$/, ->
 		@AuthenticationHelper.createAccount()
