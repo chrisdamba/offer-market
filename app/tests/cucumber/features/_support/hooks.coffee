@@ -6,7 +6,7 @@ module.exports = ->
 		#server.call 'emailStub/stub'
 		#server.call 'fixtures/stubCloudFrontClient'
 		# go to the page first so we have access to the Meteor object
-		client.url process.env.ROOT_URL
+		@client.url process.env.ROOT_URL
 		###client.executeAsync (done) ->
 			customer = 
 				id: 'randomId'
