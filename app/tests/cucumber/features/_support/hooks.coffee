@@ -1,6 +1,6 @@
 module.exports = ->
 	@Before ->
-		#global.expect = require('@xolvio/jasmine-expect').expect
+		#global.expect = Npm.require('jasmine-expect').expect
 		@server.call 'fixtures/reset'
 		#server.call 'emailStub/reset'
 		#server.call 'emailStub/stub'

@@ -11,6 +11,7 @@ coffeescript
 underscore
 accounts-password
 accounts-base
+meteorhacks:npm
 
 
 jquery
@@ -43,3 +44,5 @@ sanjo:jasmine
 practicalmeteor:sinon
 velocity:helpers
 velocity:html-reporter
+
+npm-container
