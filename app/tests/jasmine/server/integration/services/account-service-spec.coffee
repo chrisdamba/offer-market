@@ -13,7 +13,7 @@ describe 'Account Service', ->
 				email: 'me@example.com'
 				profile: stripeCustomerId: 'cust_00001'
 			
-			expect(Accounts.sendEnrollmentEmail).toHaveBeenCalledWith 'someId'###
+			expect(Accounts.sendEnrollmentEmail).toHaveBeenCalledWith 'someId'
 
 	describe 'sendEmail', ->
 
@@ -134,4 +134,4 @@ describe 'Account Service', ->
 
 					emailAddress = OfferMarket.Services.Account.determineEmail userData
 
-					expect(emailAddress).toEqual(null)
+					expect(emailAddress).toEqual(null)###
