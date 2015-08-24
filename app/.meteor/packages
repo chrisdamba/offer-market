@@ -4,7 +4,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-# - - Core Meteor Packages
 meteor-platform
 autopublish
 standard-app-packages
@@ -12,61 +11,28 @@ coffeescript
 underscore
 accounts-password
 accounts-base
+meteorhacks:npm
+
+
+jquery
+check
+audit-argument-checks
+iron:router
+themeteorchef:jquery-validation
 accounts-facebook
 accounts-github
 accounts-google
 accounts-twitter
-jquery
-check
+meteorhacks:ssr
 service-configuration
 http
 email
-browser-policy
-reactive-var
-amplify
-
-# - - Internal Packages
-offermarket:core
-
-# - - Community Packages
-audit-argument-checks
-themeteorchef:jquery-validation
-
 horka:swipebox
 interwebs:framework7
 swiper:swiper
 
-
-d3js:d3
-mrt:underscore-string-latest
-aldeed:geocoder
-aldeed:autoform
-aldeed:collection2
-aldeed:simple-schema@1.3.3
-aldeed:template-extension
-iron:router
-ongoworks:speakingurl
-ongoworks:bunyan-logger
-ongoworks:security
-
-dburles:factory
-anti:fake
-matb33:collection-hooks
-alanning:roles
-momentjs:moment
-risul:moment-timezone
-utilities:spin
-utilities:avatar
-
-cfs:standard-packages
-cfs:storage-adapter
-cfs:graphicsmagick
-cfs:gridfs
-cfs:filesystem
-cfs:ui
-raix:ui-dropped-event
-meteorhacks:ssr
-meteorhacks:npm
+# - - Internal Packages
+offermarket:core
 
 # - - Testing packages
 xolvio:cucumber

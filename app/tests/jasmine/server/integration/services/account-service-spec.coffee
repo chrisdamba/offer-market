@@ -1,6 +1,6 @@
 describe 'Account Service', ->
 
-	###describe 'createAccount', ->
+	describe 'createAccount', ->
 		
 		it 'creates an account, stores the stripe customer id and invites the user to enroll', ->
 			
@@ -134,4 +134,4 @@ describe 'Account Service', ->
 
 					emailAddress = OfferMarket.Services.Account.determineEmail userData
 
-					expect(emailAddress).toEqual(null)###
+					expect(emailAddress).toEqual(null)
