@@ -27,9 +27,36 @@ meteorhacks:ssr
 service-configuration
 http
 email
-horka:swipebox
-interwebs:framework7
-swiper:swiper
+
+# -- Community Packages
+mquandalle:bower
+d3js:d3
+mrt:underscore-string-latest
+aldeed:geocoder
+aldeed:autoform
+aldeed:collection2
+aldeed:simple-schema
+aldeed:template-extension
+ongoworks:speakingurl
+ongoworks:bunyan-logger
+ongoworks:security
+dburles:factory
+anti:fake
+matb33:collection-hooks
+alanning:roles
+momentjs:moment
+risul:moment-timezone
+utilities:spin
+utilities:avatar
+cfs:standard-packages
+cfs:storage-adapter
+cfs:graphicsmagick
+cfs:gridfs
+cfs:filesystem
+cfs:ui
+raix:ui-dropped-event
+fortawesome:fontawesome
+
 
 # - - Internal Packages
 offermarket:core

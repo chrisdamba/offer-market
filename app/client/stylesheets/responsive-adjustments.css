@@ -1,0 +1,91 @@
+@charset "utf-8";
+    .raleway {
+    font-family: 'Raleway',sans-serif}
+.border-box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box}
+@media (max-width: 991px) {
+    #header.header-top-fixed {
+    position: absolute}
+#header.header-top-fixed .dis-n {
+    display: block}
+#header .header-main-fixed {
+    height: 150px;
+    box-shadow: none}
+#header .header-main-fixed .header-main-block1 {
+    background-color: rgba(14,14,14,.5)}
+#header .header-logo {
+    text-align: center}
+.home-category .home-category-block .home-category-title {
+    position: relative;
+    margin-top: 30px}
+.second-page-container {
+    padding-top: 260px}
+.payment-service h3 {
+    text-align: center}
+.payment-service p {
+    text-align: center}
+#header .header-bg-fixed {
+    height: 150px}
+#header #container-fixed {
+    margin: 5px 0}
+.main-category-block .main-category-list .with-dropdown .dropdown-menu {
+    position: relative;
+    left: -1px;
+    width: 100%}
+.block-chess-banners .block-chess .chess-caption-right{
+        padding: 30px;
+    }
+.block-chess-banners .block-chess .chess-caption-left{
+        padding: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .nav-justified>li>a {
+    margin-bottom: 0}
+#header .header-main .navbar-collapse {
+    z-index: 999;
+    position: relative;
+    background-color: #0e0e0e}
+#header .header-main .navbar-collapse h4 {
+    color: rgba(234,234,234,.9)}
+#header .header-main .navbar-collapse .dropdown-menu a {
+    color: rgba(234,234,234,.5)}
+#header .header-main .navbar-collapse .dropdown-menu a:hover {
+    color: #eb2c33}
+.product-image {
+    margin-bottom: 30px}
+.navbar-nav .open .dropdown-menu>li>a {
+    height: 40px;
+    line-height: 30px}
+#header .navbar-main .dropdown-submenu>.dropdown-menu {
+    position: relative;
+    left: 0;
+    padding-left: 30px}
+.header-for-light h1 {
+    font-size: 32px;
+    line-height: 42px}
+.header-for-dark h1 {
+    font-size: 32px;
+    line-height: 42px}
+.product.list .figure-hover-overlay  img{
+    width: 100%; max-width: none}
+}
+@media (max-width: 480px) {
+    .second-page-container {
+    padding-top: 300px}
+#header .header-main .top-search-form {
+    width: 100%;
+    text-align: right}
+.header-for-light h1 {
+    font-size: 26px;
+    line-height: 42px}
+.header-for-dark h1 {
+    font-size: 26px;
+    line-height: 42px}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .product-image {
+    margin-bottom: 30px}
+}

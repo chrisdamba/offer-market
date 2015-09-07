@@ -5,23 +5,48 @@
 
 /* globals OfferMarket: true */
 
-OfferMarket = {
+OfferMarket = {  
   
-  Constants: {},
-  
-  // Small reusable utilities
-  Utils: {},
-  
-  // Meteor Mongo Collections
+  API: {},
+
   Collections: {},
   
-  // Domain specific logic.
+  Constants: {},  
+  
+  Events: {},
+
+  Helpers: {},
+
+  Locale: {},
+
+  MetaData: {},
+
+  Schemas: {},
+  
   Services: {},
   
   Subscriptions: {},
+
+  Utils: {}  
   
-  API: {}
 };
 
+if (Meteor.isClient) {
+	OfferMarket.Alerts = {};
+	OfferMarket.Subscriptions = {};
+}
+
+
+// not exported to client (private)
+OfferMarketRegistry = {};
+OfferMarketRegistry.Packages = {};
+
+// convenience
+Alerts = OfferMarket.Alerts;
+Schemas = OfferMarket.Schemas;
+
 var global = this;
+global.Alerts = Alerts;
 global.OfferMarket = OfferMarket;
+global.OfferMarketRegistry = OfferMarketRegistry;
+global.Schemas = Schemas;

@@ -1,0 +1,14 @@
+<template name="coreHead">
+  <head>
+    <title>{{metaData.name}} | {{metaData.title}}</title>
+    {{#each metaData.meta}}
+      <meta name="{{name}}" content="{{content}}">
+    {{/each}}
+  </head>
+</template>
+
+<template name="coreLayout">
+  <header id="header" class="navigation-header">{{> yield region="layoutHeader"}}</header>
+   {{> yield}} 
+  <footer id="footer-block" class="navigation-footer">{{>yield region="layoutFooter"}}</footer>
+</template>
