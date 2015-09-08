@@ -9,6 +9,9 @@
 
 <template name="coreLayout">
   <header id="header" class="navigation-header">{{> yield region="layoutHeader"}}</header>
+  <section>
+    <div class="top-header-bg"></div>
+ </section>
   <section id="content">{{> yield}}</section> 
   <footer id="footer-block" class="navigation-footer">{{>yield region="layoutFooter"}}</footer>
 </template>
