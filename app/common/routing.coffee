@@ -4,7 +4,7 @@
 ###
 Router.configure
 	notFoundTemplate: "notFound"
-	loadingTemplate: "loading"
+	loadingTemplate: "products"
 	onBeforeAction: ->
 		if Meteor.isClient
 			@render "loading"
