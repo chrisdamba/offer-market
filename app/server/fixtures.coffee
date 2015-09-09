@@ -22,17 +22,17 @@ PackageFixture = ->
 			json = EJSON.parse jsonFile
 
 		# loop through and import
-		for item, index in json
-			collection.insert item, (error, result) ->
+		for item, index in json									
+			collection.insert item, (error, result) ->				
 				if error
-					OfferMarket.Events.warn "Error adding " + index + " to " + collection._name, item, error
+					OfferMarket.Events.warn "Error adding #{index} to #{collection._name}" , item, error
 					return false
 		if index > 0
-			OfferMarket.Events.info ("Success adding " + index + " items to " + collection._name)
-			return
+			OfferMarket.Events.info "Success adding  #{index} to #{collection._name}"
+
 		else
-			OfferMarket.Events.info ("No data imported to " + collection._name)
-			return
+			OfferMarket.Events.info "No data imported to #{collection._name}" 
+
 
 ###
 # instantiate fixtures

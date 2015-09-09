@@ -1,761 +1,844 @@
 <template name="productGrid">
-             <section>
-            <div class="block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="main-category-block ">
-                                <div class="main-category-title">
-                                    <i class="fa fa-list"></i> Main Menu
+    {{> revolutionSlider}} 
 
-                                </div>
-                                <nav class="main-category-items">
-                                    <ul class="main-category-list list-unstyled">
-                                        <li class="with-dropdown">
-                                            <a href=""><i class="fa fa-home"></i>Home pages</a>
-                                            <div class="dropdown-menu fadeInUp animated menu1">
-                                                <ul class="list-unstyled">
-                                                    <li><h4>Home version </h4></li>
-                                                    <li>
-                                                        <a  href="index.html"> Home </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="index2.html"> Home Header Light</a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="index3.html"> Home Vertical Menu</a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="index-dark.html"> Home Dark Version</a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="index-with-side.html"> Home With Side</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="with-dropdown">
-                                            <a href=""><i class="fa fa-anchor"></i>Base pages</a>
-                                            <div class="dropdown-menu fadeInUp animated menu2">
+    <section>
+        <div class="block  color-scheme-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="title-block wow fadeInLeft">
 
-                                                <ul class="list-unstyled">
-                                                    <li><h4>Additional </h4></li>
-                                                    <li>
-                                                        <a  href="blog-items.html"> Blog items </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="blog-content.html"> Blog Content </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="contact.html"> Contact </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="shortcode.html"> Shortcode </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="404.html"> 404 </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="with-dropdown">
-                                            <a href=""><i class="fa fa-user"></i>Account pages</a>
-                                            <div class="dropdown-menu fadeInUp animated menu3">
-                                                <ul class="list-unstyled">
-                                                    <li><h4>Account pages </h4></li>
-                                                    <li>
-                                                        <a  href="register.html"> Register </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="login.html"> Login </a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a  href="change-pas.html"> Change Password </a>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="with-dropdown">
-                                            <a href=""><i class="fa fa-print"></i>Product pages</a>
-                                            <div class="dropdown-menu fadeInUp animated menu4">
-                                                <ul class="list-unstyled">
-                                                    <li><h4>Pages </h4></li>
-                                                    <li>
-                                                        <a href="products-grid.html">Product grid </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="products-list.html">Product list </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="product-detail.html">Product detail </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="product-detail2.html">Detail with Lightbox<span>New</span></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="with-dropdown">
-                                            <a href=""><i class="fa fa-shopping-cart"></i>Cart Pages</a>
-                                            <div class="dropdown-menu fadeInUp animated menu5">
-                                                <ul class="list-unstyled">
-                                                    <li><h4>Pages </h4></li>
-                                                    <li>
-                                                        <a  href="cart.html">Cart </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="checkout.html">Checkout </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="history.html">Order History </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="compare.html">Compare </a>
-                                                    </li>
-                                                    <li>
-                                                        <a  href="wishlist.html">Wishlist </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li><a href=""><i class="fa fa-desktop"></i>Computers</a></li>
-                                        <li><a href=""><i class="fa fa-tablet"></i>Tablets</a></li>
-                                    </ul>
-                                </nav>
-                            </div>                          
-                        </div>
-                        <div class="col-md-9">
-                            <div class="home-slider-block">
-                                <div id="owl-home-slider"  class="owl-carousel">
-                                    <div>
-                                        <img src="http://placehold.it/850x405" class="img-responsive" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="http://placehold.it/850x405" class="img-responsive" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="http://placehold.it/850x405" class="img-responsive" alt="">
-                                    </div>
-                                    <div>
-                                        <img src="http://placehold.it/850x405" class="img-responsive" alt="">
-                                    </div>
+                            <div class="icon text-center"><i class="fa fa-child"></i></div>
+                            <h1>Child shirt</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  </p>
+                            <div class="text-center">
+                                <div class="toolbar-for-light" id="nav-child">
+                                    <a href="javascript:;" data-role="prev" class="prev"><i class="fa fa-angle-left"></i></a>
+                                    <a href="javascript:;" data-role="next" class="next"><i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="color-scheme-white-90 block">
-                <div class="container">
-                    <div class="header-with-icon">
-                        <i class="fa fa-tags"></i> Summer sale
-                        <div class="toolbar-for-light" id="nav-bestseller">
-                            <a href="javascript:;" data-role="prev" class="prev"><i class="fa fa-angle-left"></i></a>
-                            <a href="javascript:;" data-role="next" class="next"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                    <div id="owl-bestseller"  class="owl-carousel">
-                        <div class="text-center">
-                            <article class="product light">
-                                <figure class="figure-hover-overlay">                                                                        
-                                    <a href="#"  class="figure-href"></a>
-                                    <div class="product-new">new</div>
-                                    <div class="product-sale">11% <br> off</div>
-                                    <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                    <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                    <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                    <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                </figure>
-                                <div class="product-caption">
-                                    <div class="block-name">
-                                        <a href="#" class="product-name">Product name</a>
-                                        <p class="product-price"><span>$330</span> $320.99</p>
-
-                                    </div>
-                                    <div class="product-cart">
-                                        <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                    </div>
-                                    <div class="product-rating">
-                                        <div class="stars">
-                                            <span class="star"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
-                                        </div>
-                                        <a href="" class="review">8 Reviews</a>
-                                    </div>
-                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit, sed do eiusmod</p>
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="text-center">
-                            <article class="product light">
-                                <figure class="figure-hover-overlay">                                                                        
-                                    <a href="#"  class="figure-href"></a>
-                                    <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                    <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                    <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                    <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-
-                                </figure>
-                                <div class="product-caption">
-                                    <div class="block-name">
-                                        <a href="#" class="product-name">Product name</a>
-                                        <p class="product-price"><span>$330</span> $320.99</p>
-
-                                    </div>
-                                    <div class="product-cart">
-                                        <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                    </div>
-                                    <div class="product-rating">
-                                        <div class="stars">
-                                            <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
-                                        </div>
-                                        <a href="" class="review">8 Reviews</a>
-                                    </div>
-                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit, sed do eiusmod</p>
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="text-center">
-                            <article class="product light">
-                                <figure class="figure-hover-overlay">                                                                        
-                                    <a href="#"  class="figure-href"></a>
-
-                                    <div class="product-new">new</div>
-                                    <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                    <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                    <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                    <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-
-                                </figure>
-                                <div class="product-caption">
-                                    <div class="block-name">
-                                        <a href="#" class="product-name">Product name</a>
-                                        <p class="product-price"><span>$330</span> $320.99</p>
-
-                                    </div>
-                                    <div class="product-cart">
-                                        <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                    </div>
-                                    <div class="product-rating">
-                                        <div class="stars">
-                                            <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
-                                        </div>
-                                        <a href="" class="review">8 Reviews</a>
-                                    </div>
-                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit, sed do eiusmod</p>
-                                </div>
-
-                            </article>
-                        </div>
-                        <div class="text-center">
-                            <article class="product light">
-                                <figure class="figure-hover-overlay">                                                                        
-                                    <a href="#"  class="figure-href"></a>
-                                    <div class="product-sale">17% <br> off</div>
-                                    <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                    <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                    <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                    <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                </figure>
-                                <div class="product-caption">
-                                    <div class="block-name">
-                                        <a href="#" class="product-name">Product name</a>
-                                        <p class="product-price"><span>$330</span> $320.99</p>
-
-                                    </div>
-                                    <div class="product-cart">
-                                        <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                    </div>
-                                    <div class="product-rating">
-                                        <div class="stars">
-                                            <span class="star"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
-                                        </div>
-                                        <a href="" class="review">8 Reviews</a>
-                                    </div>
-                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit, sed do eiusmod</p>
-                                </div>
-
-                            </article>
-
-                        </div>
-                        <div class="text-center">
-                            <article class="product light">
-                                <figure class="figure-hover-overlay">                                                                        
-                                    <a href="#"  class="figure-href"></a>
-                                    <div class="product-new">new</div>
-                                    <div class="product-sale">7% <br> off</div>
-                                    <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                    <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                    <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                    <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                </figure>
-                                <div class="product-caption">
-                                    <div class="block-name">
-                                        <a href="#" class="product-name">Product name</a>
-                                        <p class="product-price"><span>$330</span> $320.99</p>
-
-                                    </div>
-                                    <div class="product-cart">
-                                        <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                    </div>
-                                    <div class="product-rating">
-                                        <div class="stars">
-                                            <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
-                                        </div>
-                                        <a href="" class="review">8 Reviews</a>
-                                    </div>
-                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit, sed do eiusmod</p>
-                                </div>
-
-                            </article>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="color-scheme-white-90">
-                <div class="container">
-                    <div class="block-product-tab">
-                        <div class="tab-bg"></div>
-                        <div class="toolbar-for-light" id="nav-tabs">
-                            <a href="javascript:;" data-role="prev" class="prev"><i class="fa fa-angle-left"></i></a>
-                            <a href="javascript:;" data-role="next" class="next"><i class="fa fa-angle-right"></i></a>
+                    <div class="col-md-9">
+                        <div id="owl-child"  class="owl-carousel">
+                        	{{#each products}}
+						      	{{> productGridItems}}
+						    {{/each}}                            
                         </div>  
-                        <ul class="nav nav-pills">
-                            <li class="active"><a href="#new" data-toggle="tab">New Arrivals</a><div class="header-bottom-line"></div></li>
-                            <li><a href="#featured" data-toggle="tab" class="disabled">Featured</a><div class="header-bottom-line"></div></li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active animated fadeIn" id="new">
-                                <div id="owl-new"  class="owl-carousel">
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <div class="product-sale">11% <br> off</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
 
+    <section>
+        <div class="block">
+            <div class="container">
+                <div class="block-product-tab">
+                    <div class="tab-bg"></div>
+                    <div class="toolbar-for-light" id="nav-tabs">
+                        <a href="javascript:;" data-role="prev" class="prev"><i class="fa fa-angle-left"></i></a>
+                        <a href="javascript:;" data-role="next" class="next"><i class="fa fa-angle-right"></i></a>
+                    </div>  
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#new" data-toggle="tab">New Arrivals</a><div class="header-bottom-line"></div></li>
+                        <li><a href="#featured" data-toggle="tab" class="disabled">Featured</a><div class="header-bottom-line"></div></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active animated fadeIn" id="new">
+                            <div id="owl-new"  class="owl-carousel">
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <div class="product-sale">11% <br> off</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
 
                                             </div>
-
-                                        </article>
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
                                             </div>
 
-                                        </article>
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
 
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
+                                        </div>
 
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
-                                            </div>
-
-                                        </article>
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <div class="product-sale">17% <br> off</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
-                                            </div>
-
-                                        </article>
-
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <div class="product-sale">7% <br> off</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
-                                            </div>
-
-                                        </article>
-                                    </div>
+                                    </article>
                                 </div>
-                            </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
 
-                            <div class="tab-pane animated fadeIn" id="featured">
-                                <div id="owl-featured"  class="owl-carousel">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
 
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
                                             </div>
-
-                                        </article>
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <div class="product-sale">17% <br> off</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
                                             </div>
+                                        </div>
 
-                                        </article>
+                                    </article>
+                                </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
 
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
 
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
                                             </div>
-
-                                        </article>
-                                    </div>
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <div class="product-sale">11% <br> off</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
                                             </div>
+                                        </div>
 
-                                        </article>
-                                    </div>
+                                    </article>
+                                </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <div class="product-sale">17% <br> off</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
 
-                                    <div class="text-center">
-                                        <article class="product light">
-                                            <figure class="figure-hover-overlay">                                                                        
-                                                <a href="#"  class="figure-href"></a>
-                                                <div class="product-new">new</div>
-                                                <div class="product-sale">7% <br> off</div>
-                                                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
-                                                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
-                                                <img src="http://placehold.it/400x500" class="img-responsive" alt="">
-                                            </figure>
-                                            <div class="product-caption">
-                                                <div class="block-name">
-                                                    <a href="#" class="product-name">Product name</a>
-                                                    <p class="product-price"><span>$330</span> $320.99</p>
-
-                                                </div>
-                                                <div class="product-cart">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
-                                                </div>
                                             </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
 
-                                        </article>
-                                    </div>
+                                    </article>
 
+                                </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <div class="product-sale">7% <br> off</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
+
+                                            </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                    </article>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="tab-pane animated fadeIn" id="featured">
+                            <div id="owl-featured"  class="owl-carousel">
+
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
+
+                                            </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                    </article>
+                                </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <div class="product-sale">17% <br> off</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
+
+                                            </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                    </article>
+
+                                </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
+
+                                            </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                    </article>
+                                </div>
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <div class="product-sale">11% <br> off</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
+
+                                            </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                    </article>
+                                </div>
+
+                                <div class="text-center">
+                                    <article class="product light">
+                                        <figure class="figure-hover-overlay">                                                                        
+                                            <a href="#"  class="figure-href"></a>
+                                            <div class="product-new">new</div>
+                                            <div class="product-sale">7% <br> off</div>
+                                            <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                                            <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                                            <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                                        </figure>
+                                        <div class="product-caption">
+                                            <div class="block-name">
+                                                <a href="#" class="product-name">Product name</a>
+                                                <p class="product-price"><span>$330</span> $320.99</p>
+
+                                            </div>
+                                            <div class="product-cart">
+                                                <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                            </div>
+                                        </div>
+
+                                    </article>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div class="container">
+                <div class="header-with-icon">
+                    <i class="fa fa-tags"></i> Summer sale
+                    <div class="toolbar-for-light" id="nav-bestseller">
+                        <a href="javascript:;" data-role="prev" class="prev"><i class="fa fa-angle-left"></i></a>
+                        <a href="javascript:;" data-role="next" class="next"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div id="owl-bestseller"  class="owl-carousel">
+                    {{#each products}}
+				      	{{> productGridItems}}
+				    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="block">
+            <div class="container">
+                <div class="row">
+                    <article class="col-md-4">
+                        <div class="widget-title">
+                            <i class="fa fa-thumbs-up"></i> Bestseller
+                        </div>
+                        <div class="widget-block">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-2 col-xs-3">
+                                    <img class="img-responsive" src="http://placehold.it/400x500.jpg" alt="" title="">   
+                                </div>
+                                <div class="col-md-8  col-sm-10 col-xs-9">
+                                    <div class="block-name">
+                                        <a href="#" class="product-name">Product name</a>
+                                        <p class="product-price"><span>$330</span> $320.99</p>
+
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                        </div>
+                                        <a href="" class="review">8 Reviews</a>
+                                    </div>
+                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-block">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-2 col-xs-3">
+                                    <img class="img-responsive" src="http://placehold.it/400x500" alt="" title="">   
+                                </div>
+                                <div class="col-md-8 col-sm-10 col-xs-9">
+                                    <div class="block-name">
+                                        <a href="#" class="product-name">Product name</a>
+                                        <p class="product-price"><span>$330</span> $320.99</p>
+
+                                    </div>
+                                    <div class="product-rating">
+                                        <div class="stars">
+                                            <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                        </div>
+                                        <a href="" class="review">8 Reviews</a>
+                                    </div>
+                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="widget-title">
+                            <i class="fa fa-user"></i> Our Store
+                        </div> 
+                        <p>
+                            <span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <blockquote>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </blockquote>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="widget-title">
+                            <i class="fa fa-comments"></i> Latest Posts
+                        </div>
+                        <div class="widget-block">
+                            <div class="row">
+                                <div class="col-md-4  col-sm-2 col-xs-4">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="" title="">   
+                                </div>
+                                <div class="col-md-8  col-sm-10 col-xs-8">
+                                    <div class="block-name">
+                                        <a href="#" class="product-name">Summer sale</a>
+
+                                    </div>
+                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-block">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="" title="">   
+                                </div>
+                                <div class="col-md-8 col-sm-10 col-xs-8">
+                                    <div class="block-name">
+                                        <a href="#" class="product-name">Call now</a>
+
+                                    </div>
+                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-block">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-2 col-xs-4">
+                                    <img class="img-responsive" src="http://placehold.it/400x300" alt="" title="">   
+                                </div>
+                                <div class="col-md-8 col-sm-10 col-xs-8">
+                                    <div class="block-name">
+                                        <a href="#" class="product-name">Good day</a>
+
+                                    </div>
+                                    <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <article class="banner">
+                    <a href="#">
+                        <img src="http://placehold.it/1200x230" class="img-responsive" alt="">
+                    </a> 
+                </article>
+                <div class="row">
+                    <article class="col-md-4">
+                        <div class="widget-title">
+                            <i class="fa fa-tags"></i> Tags
+                        </div>
+                        <div class="widget-block">
+                            <ul class="list-unstyled tags">
+                                <li><a href="#">men</a></li>
+                                <li><a href="#">women</a></li>
+                                <li><a href="#">clothes</a></li>
+                                <li><a href="#">top</a></li>
+                                <li><a href="#">sale</a></li>
+                                <li><a href="#">dresses</a></li>
+                                <li><a href="#">short</a></li>
+                                <li><a href="#">skirt</a></li>
+                                <li><a href="#">top</a></li>
+                                <li><a href="#">bestseller</a></li>
+                                <li><a href="#">new</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="widget-title">
+                            <i class="fa fa-tasks"></i> Catalog
+                        </div>
+                        <div class="widget-block">
+                            <ul class="list-unstyled catalog">
+                                <li><a href="#"><i class="fa fa-male"></i>Clothes for men</a></li>
+                                <li><a href="#"><i class="fa fa-female"></i>Dresses for women</a></li>
+                                <li><a href="#"><i class="fa fa-child"></i>Shirts for child</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="widget-title">
+                            <i class="fa fa-thumbs-up"></i> Services
+                        </div>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                                            Money exchange
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                                            Packing your request
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                                            Send as Gift
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolort. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="block color-scheme-dark-90">
+            <div class="container">
+                <div class="header-for-dark">
+                    <h1 class="wow fadeInRight animated" data-wow-duration="2s">Business <span>partners</span></h1>
+                </div>
+                <div id="owl-partners"  class="owl-carousel">
+                    <div class="partner">
+                        <img src="img/preview/logo1.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="img/preview/logo2.png" class="img-responsive"  alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="img/preview/logo3.png" class="img-responsive"  alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="img/preview/logo4.png" class="img-responsive"  alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="img/preview/logo5.png" class="img-responsive"  alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="img/preview/logo6.png" class="img-responsive"  alt="">
+                    </div>
+                    <div class="partner">
+                        <img src="img/preview/logo7.png" class="img-responsive"  alt="">
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <section>
-            <div class="block color-scheme-white-90">
-                <div class="container">
-                    <div class="row">
-                        <article class="col-md-4">
-                            <div class="widget-title">
-                                <i class="fa fa-thumbs-up"></i> Bestseller
-                            </div>
-                            <div class="widget-block">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-2 col-xs-3">
-                                        <img class="img-responsive" src="http://placehold.it/400x500.jpg" alt="" title="">   
-                                    </div>
-                                    <div class="col-md-8  col-sm-10 col-xs-9">
-                                        <div class="block-name">
-                                            <a href="#" class="product-name">Product name</a>
-                                            <p class="product-price"><span>$330</span> $320.99</p>
-
-                                        </div>
-                                        <div class="product-rating">
-                                            <div class="stars">
-                                                <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
-                                            </div>
-                                            <a href="" class="review">8 Reviews</a>
-                                        </div>
-                                        <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-block">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-2 col-xs-3">
-                                        <img class="img-responsive" src="http://placehold.it/400x500" alt="" title="">   
-                                    </div>
-                                    <div class="col-md-8 col-sm-10 col-xs-9">
-                                        <div class="block-name">
-                                            <a href="#" class="product-name">Product name</a>
-                                            <p class="product-price"><span>$330</span> $320.99</p>
-
-                                        </div>
-                                        <div class="product-rating">
-                                            <div class="stars">
-                                                <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
-                                            </div>
-                                            <a href="" class="review">8 Reviews</a>
-                                        </div>
-                                        <p class="description">Lorem ipsum dolor sit amet, con sec tetur adipisicing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="widget-title">
-                                <i class="fa fa-user"></i> Our Store
-                            </div> 
-                            <p>
-                                <span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <blockquote>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </blockquote>
-                        </article>
-                        <article class="col-md-4">
-                            <div class="widget-title">
-                                <i class="fa fa-thumbs-up"></i> Services
-                            </div>
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
-                                                Money exchange
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-                                                Packing your request
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-                                                Send as Gift
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolort. 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 </template>
 
 
+<template name="revolutionSlider">
+	<section>
+        <div class="revolution-container">
+            <div class="revolution">
+                <ul class="list-unstyled">  <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- MAIN IMAGE -->
+                        <img src="http://placehold.it/1920x1200"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="160"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="300"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <img src="img/preview/slider/1.png" alt="">
+                        </div>
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="224"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="500"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <img src="img/preview/slider/1-2.png" alt="">
+                        </div>
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="335"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="700"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <img src="img/preview/slider/1-1.png" alt="">
+                        </div>
+                        <div class="tp-caption customin customout hidden-xs"
+                             data-x="20"
+                             data-y="430"
+                             data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="1000"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 2">
+                            <a href="#" class="btn-home">Shop All</a>
+                        </div>
+                        <div class="tp-caption customin customout hidden-xs"
+                             data-x="145"
+                             data-y="430"
+                             data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="1200"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 2">
+                            <a href="#" class="btn-home">Read more</a>
+                        </div>
+                    </li>
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- MAIN IMAGE -->
+                        <img src="http://placehold.it/1920x1200"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="204"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="500"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 2">
+                            <img src="img/preview/slider/1-2.png" alt="">
+                        </div>
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="315"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="700"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 2">
+                            <img src="img/preview/slider/1-1.png" alt="">
+                        </div>
+                        <div class="tp-caption customin customout hidden-xs"
+                             data-x="20"
+                             data-y="410"
+                             data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="1000"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 3">
+                            <a href="#" class="btn-home">Shop All</a>
+                        </div>
+                        <div class="tp-caption customin customout hidden-xs"
+                             data-x="145"
+                             data-y="410"
+                             data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="1200"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <a href="#" class="btn-home">Read more</a>
+                        </div>
+
+
+                    </li>
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- MAIN IMAGE -->
+                        <img src="http://placehold.it/1920x1200"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="160"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="300"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <img src="img/preview/slider/1.png" alt="">
+                        </div>
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="224"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="500"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <img src="img/preview/slider/1-2.png" alt="">
+                        </div>
+                        <div class="tp-caption skewfromrightshort customout"
+                             data-x="20"
+                             data-y="335"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="700"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 4">
+                            <img src="img/preview/slider/1-1.png" alt="">
+                        </div>
+                        <div class="tp-caption customin customout hidden-xs"
+                             data-x="20"
+                             data-y="430"
+                             data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="1000"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 2">
+                            <a href="#" class="btn-home">Shop All</a>
+                        </div>
+                        <div class="tp-caption customin customout hidden-xs"
+                             data-x="145"
+                             data-y="430"
+                             data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                             data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="500"
+                             data-start="1200"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="500"
+                             data-endeasing="Power4.easeIn"
+                             data-captionhidden="on"
+                             style="z-index: 2">
+                            <a href="#" class="btn-home">Read more</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="revolutiontimer"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <article class="banner">
+                            <a href="#">
+                                <img src="http://placehold.it/900x677" class="img-responsive" alt="">
+                            </a> 
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <article class="banner">
+                            <a href="#">
+                                <img src="http://placehold.it/900x677" class="img-responsive" alt="">
+                            </a> 
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <article class="banner">
+                            <a href="#">
+                                <img src="http://placehold.it/900x677" class="img-responsive" alt="">
+                            </a> 
+                        </article>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+</template>
+
 <template name="productGridItems">
-  <li class="product-grid-item {{#if position.pinned}}pinned{{/if}} {{weightClass}}" data-id="{{_id}}" id="{{_id}}">
-    {{> gridNotice}}
-    <span class="product-grid-item-alerts">
-      {{> bootstrapAlerts placement="productGridItem" id=_id}}
-    </span>
-
-    <a class="product-grid-item-images"
-      href="{{pathForSEO 'product' 'handle'}}"
-      data-event-category="grid"
-      data-event-action="product-click"
-      data-event-label="grid product click"
-      data-event-value="{{_id}}">
-
-      <div class="product-primary-images">
-        {{#with media}}
-          <span class="product-image" style="background-image: url('{{url store='large'}}')"></span>
-        {{else}}
-          <span class="product-image" style="background-image: url(/resources/placeholder.gif)"></span>
-        {{/with}}
-      </div>
-
-      {{#if additionalMedia}}
-        {{#if isMediumWeight}}
-          <div class="product-additional-images">
-            {{#each additionalMedia}}
-                <span class="product-image" style="background-image: url('{{url store='medium'}}')"></span>
-
-            {{/each}}
-          </div>
-        {{/if}}
-      {{/if}}
-    </a>
-
-    {{> gridControls}}
-    {{> gridContent}}
-  </li>
+	<div class="text-center" data-id="{{_id}}" id="{{_id}}">
+        <article class="product light wow fadeInUp">
+            <figure class="figure-hover-overlay">                                                                        
+                <a class="figure-href"
+                	href="{{pathForSEO 'product' 'handle'}}"
+			      	data-event-category="grid"
+			      	data-event-action="product-click"
+			      	data-event-label="grid product click"
+			      	data-event-value="{{_id}}">
+			    </a>
+                <div class="product-new">new</div>
+                <div class="product-sale">11% <br>off</div>
+                <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                 {{#with media}}
+                 	<img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">		          	
+		          	<img class="img-responsive" src="{{url store='large'}}" alt="" title="">
+		        {{else}}
+		        	<img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">		          	
+		          	<img class="img-responsive" src="http://placehold.it/400x500" alt="" title="">
+		        {{/with}}
+                
+            </figure>
+            {{> gridContent}}            
+        </article>
+    </div>  
 </template>
 
 
@@ -775,14 +858,15 @@
 
 
 <template name="gridContent">
-  <div class="grid-content">
-    <a href="{{pathForSEO 'product' 'handle'}}" data-event-category="grid" data-event-action="product-click" data-event-label="grid product click" data-event-value="{{_id}}">
-      <div class="overlay">
-        <div class="overlay-title">{{title}}</div>
-        <div class="currency-symbol">{{formatPrice displayPrice}}</div>
-      </div>
-    </a>
-  </div>
+	<div class="product-caption">
+        <div class="block-name">
+            <a href="#" class="product-name">{{title}}</a>
+            <p class="product-price">{{formatPrice displayPrice}}</p>
+        </div>
+        <div class="product-cart">
+            <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+        </div>
+    </div>  
 </template>
 
 
