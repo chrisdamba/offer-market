@@ -56,6 +56,7 @@ cfs:filesystem
 cfs:ui
 raix:ui-dropped-event
 fortawesome:fontawesome
+richsilv:owl-carousel
 
 
 # - - Internal Packages
