@@ -4,6 +4,7 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
+# -- core meteor packages
 meteor-platform
 autopublish
 standard-app-packages
@@ -11,9 +12,10 @@ coffeescript
 underscore
 accounts-password
 accounts-base
+accounts-ui-unstyled
+amplify
+blaze
 meteorhacks:npm
-
-
 jquery
 check
 audit-argument-checks
@@ -27,6 +29,7 @@ meteorhacks:ssr
 service-configuration
 http
 email
+browser-policy
 
 # -- Community Packages
 mquandalle:bower

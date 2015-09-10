@@ -84,9 +84,9 @@ OfferMarketRegistry.createDefaultAdminUser = ->
 ###
 OfferMarketRegistry.loadFixtures = ->
 	# Load data from json files
-	#Fixtures.loadData OfferMarket.Collections.Shops
+	Fixtures.loadData OfferMarket.Collections.Shops
 	Fixtures.loadData OfferMarket.Collections.Products
-	#Fixtures.loadData OfferMarket.Collections.Tags
+	Fixtures.loadData OfferMarket.Collections.Tags
 	#	Fixtures.loadI18n OfferMarket.Collections.Translations
 	
 
