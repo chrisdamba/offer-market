@@ -22,6 +22,7 @@ if (!!process.env.INSTALL_DEPENDENCIES) {
 else {
   process.env.CUCUMBER_TAIL = 1;
   args.push('--test');
+  args.push('--once');
 }
 
 console.log('Starting Meteor');
