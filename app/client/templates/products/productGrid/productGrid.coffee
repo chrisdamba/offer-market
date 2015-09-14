@@ -489,14 +489,15 @@ Template.gridNotice.helpers
 
 
 # =============================================================================
-# Product Grid Cintent
+# Product Grid Content
 
 # ---------------------------------------------------------
 # Product grid content helpers
 # 
 Template.gridContent.helpers
-	displayPrice: () ->
+	displayPrice: () ->		
 		getProductPriceRange(@_id) if @_id
+
 
 
 
