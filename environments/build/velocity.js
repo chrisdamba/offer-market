@@ -21,7 +21,7 @@ if (!!process.env.INSTALL_DEPENDENCIES) {
 // otherwise test the app
 else {
   process.env.CUCUMBER_TAIL = 1;
-  //args.push('--test');
+  args.push('--test');
 }
 
 console.log('Starting Meteor');
