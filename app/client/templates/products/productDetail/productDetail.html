@@ -24,85 +24,422 @@
   {{/if}}
   {{!-- END Product Visibility Admin Block --}}
    <!-- Product Detail Page -->
-  <div class="row" itemscope itemtype="http://schema.org/Product">
-    <!-- Titles -->
-    <div class="row">
-        <div class="title">
-          <h1 id="title" itemprop="name">{{>fieldComponent field="title" value=title}}</h1>
-        </div>
-        <div class="pageTitle">
-          <h2 id="pageTitle">{{>fieldComponent field="pageTitle" value=pageTitle}}</h2>
-        </div>
-    </div>
-    <!-- Product Details -->
-    <div class="row">
-      <!-- BEGIN Left Side -->
-      <div class="col-sm-5 pdp-left-column">
-        {{> productImageGallery}}
-        <h3 data-i18n="productDetail.tags">Tags</h3>
-        {{>tagsComponent tags=tags}}
-        <h3 data-i18n="productDetail.details">Details</h3>
-        {{> metaComponent }}
-      </div>
-      <!-- END Left Side -->
-      <!-- BEGIN Right Side -->
-      <div class="col-sm-7 pdp-right-column">
-        <div class="row social-pricing">
-          <div class="col-xs-8">
-            {{!-- Price Fixation --}}
-            <span class="price">
-              <span id="price" itemprop="price">{{formatPrice actualPrice}}</span>
-            </span>
-            {{>fieldComponent field="vendor" value=vendor}}
-          </div>
-          <div class="col-xs-3 col-xs-offset-1">
-            {{!-- Social Commentary --}}
-            {{#if hasPermission "createProduct"}}
-            <div class="social-media">
-              <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-              <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-              <a href="#"><i class="fa fa-pinterest fa-lg"> </i></a>
-              <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-              <div class="social-media-inputs">
-                {{>fieldComponent field="facebookMsg" value=facebookMsg}}
-                {{>fieldComponent field="twitterMsg" value=twitterMsg}}
-                {{>fieldComponent field="pinterestMsg" value=pinterestMsg}}
-                {{>fieldComponent field="googleplusMsg" value=googleplusMsg}}
+
+
+  <div class="second-page-container">
+      <div class="container">
+          <div class="row" itemscope itemtype="http://schema.org/Product">
+
+              <div class="col-md-9">
+                  <div class="block-breadcrumb">
+                      <ul class="breadcrumb">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Shirts</a></li>
+                          <li class="active">Lolo</li>
+                      </ul>
+                  </div>
+
+                  <div class="header-for-light">
+                      <h1 class="wow fadeInRight animated" data-wow-duration="1s">Shirt <span>"LOLO"</span> </h1>
+
+                  </div>
+
+                  <div class="block-product-detail">
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <div class="product-image">
+                                  <img id="product-zoom"  src='img/preview/product/small/product2.jpg' data-zoom-image="img/preview/product/large/product2.jpg" alt="">
+                                  <div id="gal1">
+
+                                      <a href="javascript:;" data-image="img/preview/product/small/product1.jpg" data-zoom-image="img/preview/product/large/product1.jpg">
+                                          <img id="img_01" src="img/preview/product/thumb/product1.jpg" alt="">
+                                      </a>
+
+                                      <a href="javascript:;" data-image="img/preview/product/small/product2.jpg" data-zoom-image="img/preview/product/large/product2.jpg">
+                                          <img id="img_01" src="img/preview/product/thumb/product2.jpg"  alt="">
+                                      </a>
+
+                                      <a href="javascript:;"  data-image="img/preview/product/small/product3.jpg" data-zoom-image="img/preview/product/large/product3.jpg">
+                                          <img id="img_01" src="img/preview/product/thumb/product3.jpg" />
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+
+                              <div class="product-detail-section">
+                                  <h3>Shirt "Lolo"</h3>
+                                  <div class="product-rating">
+                                      <div class="stars">
+                                          <span class="star"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                      </div>
+                                      <a href="" class="review">150 Reviews</a> 
+                                  </div>
+
+                                  <div class="product-information">
+                                      <div class="clearfix"> 
+                                          <label class="pull-left">Brand:</label> <a href="#">MusaicDesign</a><br>
+                                      </div>
+                                      <div class="clearfix"> 
+                                          <label class="pull-left">Collection:</label> Effect collection
+                                      </div>
+                                      <div class="clearfix"> 
+                                          <label class="pull-left">Product Code:</label> ID 175482451
+                                      </div>
+                                      <div class="clearfix">
+                                          <label class="pull-left">Size:</label>
+                                          <select name="size" class="form-control">
+                                              <option value="" selected="selected">...</option>
+                                              <option value="1">L</option>
+                                              <option value="2">XL</option>
+                                              <option value="3">XLL</option>
+                                          </select>
+                                      </div>
+                                      <div class="clearfix">
+                                          <label class="pull-left">Availability:</label>
+                                          <p>150 in stock</p>
+                                      </div>
+                                      <div class="clearfix">
+                                          <label class="pull-left">Description:</label>
+                                          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                                      </div>
+                                      <div class="clearfix">
+                                          <label class="pull-left">Price:</label>
+                                          <p class="product-price"><span>$469.99</span> $450.99</p>
+                                      </div>
+                                      <div class="clearfix">
+                                          <label class="pull-left">Quantity:</label>
+                                          <input type="number" class="form-control">
+                                      </div>
+                                      <div class="clearfix">
+                                          <label class="pull-left">Total:</label>
+                                          <p class="product-price">$850</p>
+                                      </div>
+                                      <div class="shopping-cart-buttons">
+
+                                          <a href="#" class="shoping"><i class="fa fa-shopping-cart"></i>  Add to cart</a>
+                                          <a href="#" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                          <a href="#" title="Compare"><i class="fa fa-random"></i></a>
+                                      </div>
+
+
+
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="box-border block-form">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-pills  nav-justified">
+                          <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+                          <li><a href="#additional" data-toggle="tab" class="disabled">Additional</a></li>
+                          <li><a href="#review" data-toggle="tab">Review</a></li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                          <div class="tab-pane active" id="description">
+                              <br>
+                              <h3>Product Details</h3>
+                              <hr>
+                              <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              </p>
+                              <p>
+                                  Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                              </p>
+                          </div>
+                          <div class="tab-pane" id="additional">
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-4">
+                                      <h3>Sizes</h3>
+                                      <hr>
+                                      <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit ollit anim id est laborum.
+                                      </p>
+
+                                  </div>
+                                  <div class="col-md-4 block-color">
+                                      <h3>Colors</h3>
+                                      <hr>
+                                      <ul class="colors clearfix list-unstyled">
+                                          <li><a href="" rel="003d71"></a></li>
+                                          <li><a href="" rel="c42c39"></a></li>
+                                          <li><a href="" rel="f4bc08"></a></li>
+                                          <li><a href="" rel="02882c"></a></li>
+                                          <li><a href="" rel="000000"></a></li>
+                                          <li><a href="" rel="caccce"></a></li>
+                                          <li><a href="" rel="ffffff"></a></li>
+                                          <li><a href="" rel="f9e7b6"></a></li>
+                                          <li><a href="" rel="ef8a07"></a></li>
+                                          <li><a href="" rel="5a433f"></a></li>
+                                          <li><a href="" rel="ff9bb5"></a></li>
+                                          <li><a href="" rel="8c56a9"></a></li>
+                                      </ul>
+
+                                  </div>
+                                  <div class="col-md-4">
+                                      <h3>Other</h3>
+                                      <hr>
+                                      <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit ollit anim id est laborum.
+                                      </p>
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="tab-pane" id="review">
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <h3>Clients review</h3>
+                                      <hr>
+                                      <div class="review-header">
+                                          <h5>John Smith</h5>
+                                          <div class="product-rating">
+                                              <div class="stars">
+                                                  <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                              </div>
+                                          </div>
+                                          <small class="text-muted">26/06/2014</small>
+                                      </div>
+                                      <div class="review-body">
+                                          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                                      </div>
+                                      <hr>
+                                      <div class="review-header">
+                                          <h5>Tom Carry</h5>
+                                          <div class="product-rating">
+                                              <div class="stars">
+                                                  <span class="star"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                              </div>
+                                          </div>
+                                          <small class="text-muted">05/07/2014</small>
+                                      </div>
+                                      <div class="review-body">
+                                          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                                      </div>
+                                      <hr>
+                                  </div>
+                              </div>
+                              <form role="form" method="post" action="#">
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="inputFirstName" class="control-label">First Name:<span class="text-error">*</span></label>
+                                              <div>
+                                                  <input type="text" class="form-control" id="inputFirstName">
+                                              </div>
+                                          </div>
+
+
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="inputCompany" class="control-label">Company:</label>
+                                              <div>
+                                                  <input type="text" class="form-control" id="inputCompany">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <div class="form-group">
+                                              <textarea class="form-control">    </textarea>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                          <div class="form-group">
+                                              <label  class="control-label">Your Rate:</label>
+                                              <div class="product-rating">
+                                                  <div class="stars">
+                                                      <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <input type="submit"  class="btn-default-1" value="Add Review">
+                              </form>
+
+                          </div>
+
+                      </div>
+
+
+
+                  </div>
+
+
+
               </div>
-            </div>
-            {{else}}
-              {{> productSocial }}
-            {{/if}}
-          </div>
-        </div>
-        <!-- main product information -->
-        <div class="row col-md-11">
-          {{!-- Description --}}
-          <div class="row">
-            {{>fieldComponent field="description" value=description type="textarea"}}
-          </div>
+              <div class="col-md-3">
+                  <div class="main-category-block ">
+                      <div class="main-category-title">
+                          <i class="fa fa-list"></i> Category
 
-          {{!-- Variants & Options --}}
-          <div class="row options-add-to-cart">
-          <h3 data-i18n="productDetail.options">Options</h3>
-            {{>variantList}}
-          </div>
+                      </div>
+                  </div>
+                  <div class="widget-block">
+                      <ul class="list-unstyled ul-side-category">
+                          <li><a href=""><i class="fa fa-angle-right"></i> Man / 2</a>
+                              <ul class="sub-category">
+                                  <li><a href="">Dress / 2</a>
+                                      <ul class="sub-category">
+                                          <li><a href="#">Dress 1</a></li>
+                                          <li><a href="#">Dress 2</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="">Shirt / 2</a>
+                                      <ul class="sub-category">
+                                          <li><a href="#">Shirt 1</a></li>
+                                          <li><a href="#">Shirt 2</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li><a href=""><i class="fa fa-angle-right"></i> Woman / 2</a>
+                              <ul class="sub-category">
+                                  <li><a href="">Dress / 2 </a>
+                                      <ul class="sub-category">
+                                          <li><a href="#">Dress 1</a></li>
+                                          <li><a href="#">Dress 2</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="">Shirt / 2</a>
+                                      <ul class="sub-category">
+                                          <li><a href="#">Shirt 1</a></li>
+                                          <li><a href="#">Shirt 2</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right"></i> Tablet / 0</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right"></i> Laptop / 0</a>
+                          </li>
 
-          {{!-- Cart Add Block --}}
-          <div class="row">
-            <span id="product-alerts">{{>bootstrapAlerts placement="productDetail"}}</span>
-            <div class="btn btn-success add-to-cart-block" id="add-to-cart">
-              <div class="add-to-cart-quantity pull-left">
-                <input type="number" class="form-control input-md" name="addToCartQty" id="add-to-cart-quantity" value="1" min="1"/>
+                      </ul>
+
+                  </div>
+                  <div class="product light last-sale">
+                      <figure class="figure-hover-overlay">                                                                        
+                          <a href="#"  class="figure-href"></a>
+                          <div class="product-sale">Sale <br> 7%</div>
+                          <div class="product-sale-time"><p class="time"></p></div>
+                          <a href="#" class="product-compare"><i class="fa fa-random"></i></a>
+                          <a href="#" class="product-wishlist"><i class="fa fa-heart-o"></i></a>
+                          <img src="http://placehold.it/400x500" class="img-overlay img-responsive" alt="">
+                          <img src="http://placehold.it/400x500" class="img-responsive" alt="">
+                      </figure>
+                      <div class="product-caption">
+                          <div class="block-name">
+                              <a href="#" class="product-name">Product name</a>
+                              <p class="product-price"><span>$330</span> $320.99</p>
+
+                          </div>
+                          <div class="product-cart">
+                              <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                          </div>
+                      </div>
+
+                  </div>
+                  <div class="widget-title">
+                      <i class="fa fa-money"></i> Price range
+
+                  </div>
+                  <div class="widget-block">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="input-group">
+                                  <span class="input-group-addon">$</span>
+                                  <input type="text" id="price-from" class="form-control" value="0">
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="input-group">
+                                  <span class="input-group-addon">$</span>
+                                  <input type="text" id="price-to" class="form-control" value="500">
+                              </div>
+                          </div>
+                      </div> 
+                  </div>
+                  <div class="widget-title">
+                      <i class="fa fa-dashboard"></i> Colors
+
+                  </div>
+                  <div class="widget-block">
+                      <ul class="colors clearfix list-unstyled">
+                          <li><a href="" rel="003d71"></a></li>
+                          <li><a href="" rel="c42c39"></a></li>
+                          <li><a href="" rel="f4bc08"></a></li>
+                          <li><a href="" rel="02882c"></a></li>
+                          <li><a href="" rel="000000"></a></li>
+                          <li><a href="" rel="caccce"></a></li>
+                          <li><a href="" rel="ffffff"></a></li>
+                          <li><a href="" rel="f9e7b6"></a></li>
+                          <li><a href="" rel="ef8a07"></a></li>
+                          <li><a href="" rel="5a433f"></a></li>
+                      </ul>
+                  </div>
+                  <div class="widget-title">
+                      <i class="fa fa-thumbs-up"></i> Bestseller
+                  </div>
+                  <div class="widget-block">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <img class="img-responsive" src="http://placehold.it/400x500.jpg" alt="" title="">   
+                          </div>
+                          <div class="col-md-8">
+                              <div class="block-name">
+                                  <a href="#" class="product-name">Product name</a>
+                                  <p class="product-price"><span>$330</span> $320.99</p>
+
+                              </div>
+                              <div class="product-rating">
+                                  <div class="stars">
+                                      <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                  </div>
+                                  <a href="" class="review">8 Reviews</a>
+                              </div>
+                              <p class="description">Lorem ipsum dolor.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="widget-block">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <img class="img-responsive" src="http://placehold.it/400x500" alt="" title="">   
+                          </div>
+                          <div class="col-md-8">
+                              <div class="block-name">
+                                  <a href="#" class="product-name">Product name</a>
+                                  <p class="product-price"><span>$330</span> $320.99</p>
+
+                              </div>
+                              <div class="product-rating">
+                                  <div class="stars">
+                                      <span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span><span class="star active"></span>
+                                  </div>
+                                  <a href="" class="review">8 Reviews</a>
+                              </div>
+                              <p class="description">Lorem ipsum dolor.</p>
+                          </div>
+                      </div>
+                  </div>
+
               </div>
-              <div class="add-to-cart-text" data-i18n="productDetail.addToCart">Add to cart</div>
-            </div>
-          </div>
 
-        </div>
-        <!-- END Right Side -->
-      </div>
-    </div>
+          </div>
+      </div>  
   </div>
+
+
 </div>
 </template>
