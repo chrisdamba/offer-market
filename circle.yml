@@ -102,5 +102,5 @@ deployment:
       - sed -i.bak s^%STRIPE_SECRET_KEY%^$TEST_STRIPE_SECRET_KEY^g environments/production/mup.json
 
       # Run Meteor-up deployment using file with secure vars
-      # - mupx deploy:
-      #     pwd: environments/production
+      #- mupx deploy:
+      #  pwd: environments/production
